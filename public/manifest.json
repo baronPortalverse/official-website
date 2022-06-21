@@ -1,0 +1,20 @@
+{
+    "name": "PORTALVERSE",
+    "short_name": "PORTALVERSE",
+    "description": "A decentralized cloud gaming network for open & highly immersive virtual worlds. Enabling players with low threshold computing power to enter the Metaverse.",
+    "icons": [
+        {
+            "src": "/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000",
+    "background_color": "#000000",
+    "display": "standalone"
+}
