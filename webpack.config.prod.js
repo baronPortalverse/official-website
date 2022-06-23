@@ -96,7 +96,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'webpack slim',
             template: __dirname + '/public/index.html',
-            favicon: __dirname + '/public/favicon.ico',
+            favicon: __dirname + '/public/images/favicon.ico',
         }),
     ],
 }
