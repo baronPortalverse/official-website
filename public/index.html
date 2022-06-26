@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <title>PORTALVERSE</title>
-        <meta name="description" content="A decentralized cloud gaming network for open & highly immersive virtual worlds. Enabling players with low threshold computing power to enter the Metaverse." />
+        <meta
+            name="description"
+            content="A decentralized cloud gaming network for open & highly immersive virtual worlds. Enabling players with low threshold computing power to enter the Metaverse."
+        />
         <meta name="author" content="PORTALVERSE" />
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -28,25 +31,38 @@
             gtag("config", "G-L5SSFERMSM", { cookie_expires: 7776e3 });
         </script> -->
 
+        <style></style>
         <style>
-            #intercom-container {
+            ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            ::-webkit-scrollbar-corner {
                 display: none;
             }
-        </style>
-        <style>
-            html {
+            /* html {
                 scrollbar-width: none;
             }
             body {
                 -ms-overflow-style: none;
+                min-width: 1440px;
+                background: #171717;
             }
             body::-webkit-scrollbar {
                 width: 0;
                 height: 0;
-            }
+            } */
         </style>
     </head>
     <body>
-        <div id="app"></div>
+        <div class="bloom-container">
+            <div class="bloom1-top"></div>
+            <div class="bloom1-bottom"></div>
+        </div>
     </body>
 </html>
