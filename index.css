@@ -1,59 +1,89 @@
-body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: overlay;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    min-width: 1440px;
-    background: #171717;
+html {
+	font-size: 10px;
+}
+@font-face {
+	font-family: 'icomoon';
+	src: url('./src/assets/fonts/icomoon.eot?o5ufal');
+	src: url('./src/assets/fonts/icomoon.eot?o5ufal#iefix') format('embedded-opentype'),
+		url('./src/assets/fonts/icomoon.ttf?o5ufal') format('truetype'),
+		url('./src/assets/fonts/icomoon.woff?o5ufal') format('woff'),
+		url('./src/assets/fonts/icomoon.svg?o5ufal#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
 }
 
-.bloom-container {
-    position: absolute;
-    width: 100%;
-    height: 2000px;
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: overlay;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, 'icomoon';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-width: 1440px;
+	background: #171717;
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 28px;
+}
+/* 
+.bloom-layer {
+	position: absolute;
+	width: 1981px;
+	height: 5945px;
+	left: -198px;
+	top: -99px;
+}
+.bloom1-group {
+	position: absolute;
+	width: 778px;
+	height: 442px;
+	left: 630px;
+	top: 0px;
+
+	transform: rotate(90deg);
 }
 .bloom1-top {
-    position: absolute;
-    height: 778px;
-    width: 778px;
-    left: -10px;
-    top: -99px;
+	position: absolute;
+	height: 778px;
+	left: 778px;
+	right: -778px;
+	bottom: -336px;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        conic-gradient(
-            from 149.39deg at 2.64% 35.15%,
-            rgba(255, 255, 255, 0) 0deg,
-            #ffffff 333.31deg,
-            rgba(255, 255, 255, 0) 360deg
-        ),
-        linear-gradient(137.87deg, #f6f063 5.36%, rgba(224, 119, 116, 0) 62.77%),
-        linear-gradient(83.36deg, #ff3866 3.72%, #711eff 46.75%, #3fe5ff 94.51%);
-    opacity: 0.4;
-    filter: blur(326.516px);
-    transform: rotate(90deg);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		conic-gradient(
+			from 149.39deg at 2.64% 35.15%,
+			rgba(255, 255, 255, 0) 0deg,
+			#ffffff 333.31deg,
+			rgba(255, 255, 255, 0) 360deg
+		),
+		linear-gradient(137.87deg, #f6f063 5.36%, rgba(224, 119, 116, 0) 62.77%),
+		linear-gradient(83.36deg, #ff3866 3.72%, #711eff 46.75%, #3fe5ff 94.51%);
+	opacity: 0.4;
+	filter: blur(326.516px);
+	transform: rotate(90deg);
 }
 .bloom1-bottom {
-    position: absolute;
-    height: 754px;
-    width: 754px;
-    left: 178px;
-    top: -87px;
+	position: absolute;
+	height: 754px;
+	left: 942px;
+	right: -918px;
+	bottom: -324px;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        conic-gradient(
-            from 149.39deg at 2.64% 35.15%,
-            rgba(255, 255, 255, 0) 0deg,
-            #ffffff 333.31deg,
-            rgba(255, 255, 255, 0) 360deg
-        ),
-        linear-gradient(137.87deg, #f6f063 5.36%, rgba(224, 119, 116, 0) 62.77%),
-        linear-gradient(83.36deg, #ff3866 3.72%, #711eff 46.75%, #3fe5ff 94.51%);
-    mix-blend-mode: hard-light;
-    opacity: 0.2;
-    filter: blur(432.057px);
-    transform: rotate(90deg);
-}
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		conic-gradient(
+			from 149.39deg at 2.64% 35.15%,
+			rgba(255, 255, 255, 0) 0deg,
+			#ffffff 333.31deg,
+			rgba(255, 255, 255, 0) 360deg
+		),
+		linear-gradient(137.87deg, #f6f063 5.36%, rgba(224, 119, 116, 0) 62.77%),
+		linear-gradient(83.36deg, #ff3866 3.72%, #711eff 46.75%, #3fe5ff 94.51%);
+	mix-blend-mode: hard-light;
+	opacity: 0.2;
+	filter: blur(432.057px);
+	transform: rotate(90deg);
+} */
