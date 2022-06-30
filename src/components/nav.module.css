@@ -1,0 +1,104 @@
+.outter {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, #171717 43.23%, rgba(23, 23, 23, 0) 100%);
+	mix-blend-mode: lighten;
+}
+
+.con {
+	display: flex;
+	width: 100%;
+	max-width: 1440px;
+	box-sizing: border-box;
+
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 80px;
+}
+.iconCon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.iconCon > div {
+	font-size: 2.8rem;
+	line-height: 3rem;
+	margin-right: 3rem;
+	cursor: pointer;
+	user-select: none;
+	transition: all 300ms;
+}
+.iconCon > div:last-child {
+	margin-right: 0;
+}
+.twitter:hover {
+	color: rgb(29, 155, 240);
+}
+.discord:hover {
+	color: #404eed;
+}
+
+.language {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.language > span {
+	font-size: 2rem;
+	margin-right: 1rem;
+	font-weight: 600;
+}
+
+.drop {
+	position: absolute;
+	top: 5rem;
+	right: -30px;
+
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	box-sizing: content-box;
+
+	padding: 20px 30px;
+	background: rgba(22, 28, 36, 0.75);
+
+	border: 1px solid #342a38;
+	border-radius: 20px;
+	display: none;
+}
+.language:hover .drop {
+	display: flex;
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.item:first-child {
+	margin-bottom: 22px;
+}
+.item > span:first-child {
+	margin-right: 15px;
+}
+
+.hoverArea {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	height: 100px;
+	width: 100px;
+	display: none;
+}
+.language:hover .hoverArea {
+	display: block;
+}

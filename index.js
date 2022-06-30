@@ -1,4 +1,4 @@
 import './index.css'
-import main from './src/app'
+import main from './src/components/app'
 
 main()
