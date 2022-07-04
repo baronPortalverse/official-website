@@ -58,8 +58,11 @@
 	align-items: center;
 	width: 1200px;
 	overflow-x: auto;
-    box-sizing: border-box;
-    padding-bottom: 1rem;
+	box-sizing: border-box;
+	padding-bottom: 1rem;
+}
+.boxContainer::-webkit-scrollbar {
+	display: none;
 }
 
 .box {
@@ -68,8 +71,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-    text-align: start;
-    flex-shrink: 0;
+	text-align: start;
+	flex-shrink: 0;
 	padding: 40px;
 	gap: 16px;
 

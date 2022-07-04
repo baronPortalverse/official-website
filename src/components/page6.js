@@ -27,9 +27,9 @@ function page6(root) {
 	title2.className = style.title2
 	title2.innerText = 'Stay updated on Portalverse'
 
-	// const art1 = document.createElement('div')
-	// container.appendChild(art1)
-	// art1.className = style.art1
+	const art1 = document.createElement('div')
+	container.appendChild(art1)
+	art1.className = style.art1
 
 	const btn = document.createElement('div')
 	btn.className = style.btn
