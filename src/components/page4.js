@@ -1,3 +1,4 @@
+import { lang } from '../lang'
 import style from './page4.module.css'
 
 /**
@@ -20,24 +21,31 @@ function page4(root) {
 	title2.className = style.title2
 	boxContainer.className = style.boxContainer
 
-	title1.innerText = 'Milestones'
-	title2.innerText = 'Roadmap to Market'
+	title1.innerText = lang.lang === 'cn' ? '里程碑' : 'Milestones'
+	title2.innerText = lang.lang === 'cn' ? '市场路线图' : 'Roadmap to Market'
 
 	const roads = [
 		{
-			content: 'Complete P2P\nStreaming For\nBeta Testing',
+			content:
+				lang.lang === 'cn'
+					? '完成点对点的串\n流测试'
+					: 'Complete P2P\nStreaming For\nBeta Testing',
 			time: 'Q1 2022',
 		},
 		{
-			content: 'Beta Client App\nfor Streaming\nGames',
+			content:
+				lang.lang === 'cn'
+					? '游戏串流的测试\n版客户端应用'
+					: 'Beta Client App\nfor Streaming\nGames',
 			time: 'Q2 2022',
 		},
 		{
-			content: 'Airdrop\nCommunity\nToken $VOP',
+			content: lang.lang === 'cn' ? '空投社区代币\n$VOP' : 'Airdrop\nCommunity\nToken $VOP',
 			time: 'Q3 2022',
 		},
 		{
-			content: 'Airdrop\nCommunity\nToken $VOP',
+			content:
+				lang.lang === 'cn' ? 'Airdrop Community\nToken $VOP' : 'Airdrop\nCommunity\nToken $VOP',
 			time: 'Q3 2022',
 		},
 	]

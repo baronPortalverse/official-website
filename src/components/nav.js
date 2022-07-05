@@ -1,5 +1,6 @@
 import style from './nav.module.css'
 import logoUrl from '../assets/imgs/logo-line.png'
+import { lang } from '../lang'
 /**
  *
  * @param {HTMLElement} root
@@ -30,7 +31,8 @@ function nav(root) {
 
 	twitterIcon.innerHTML = '&#xe903;'
 	discordIcon.innerHTML = '&#xe902;'
-	languageIcon.innerHTML = '<span>EN </span>&#xe901;'
+	languageIcon.innerHTML =
+		lang.lang === 'cn' ? '<span>CN </span>&#xe901;' : '<span>EN </span>&#xe901;'
 	iconCon.append(twitterIcon, discordIcon, languageIcon)
 
 	twitterIcon.addEventListener('click', (ev) => {
@@ -53,14 +55,16 @@ function nav(root) {
 			name: 'EN',
 			emoji: '🇬🇧',
 			click() {
-				console.log('en')
+				window.location.href = window.location.href.split('#')[0] + '#en'
+				location.reload()
 			},
 		},
 		{
 			name: 'CN',
 			emoji: '🇨🇳',
 			click() {
-				console.log('cn')
+				window.location.href = window.location.href.split('#')[0] + '#cn'
+				location.reload()
 			},
 		},
 	]
@@ -75,7 +79,7 @@ function nav(root) {
 
 		name.innerText = l.name
 		emoji.innerText = l.emoji
-		item.addEventListener('click', (ev) => l.click())
+		item.addEventListener('click', (ev) => l.click(), true)
 
 		dropdown.appendChild(item)
 	})

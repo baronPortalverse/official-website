@@ -95,10 +95,11 @@
 	position: absolute;
 	top: -10px;
 	right: -10px;
-	height: 100px;
+	height: 75px;
 	width: 100px;
 	display: none;
 }
 .language:hover .hoverArea {
 	display: block;
+	/* z-index: -1; */
 }

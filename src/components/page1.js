@@ -1,3 +1,4 @@
+import { lang } from '../lang'
 import style from './page1.module.css'
 
 /**
@@ -23,18 +24,20 @@ function page1(root) {
 	description.className = style.description
 	btnContainer.className = style.btnContainer
 
-	title1.innerText = 'Portalverse Network'
-	title2.innerText = 'Decentralised\nCloud Gaming'
+	title1.innerText = lang.lang === 'cn' ? '传送内宇宙\n\r' : 'Portalverse Network'
+	title2.innerText = lang.lang === 'cn' ? '去中心化云游戏\n\r' : 'Decentralised\nCloud Gaming'
 	description.innerText =
-		'Harnessing Distributed and Underutilised Computing Powers to form a Computing\nInfrastructure Layer for the Metaverse'
+		lang.lang === 'cn'
+			? '利用分布式和未充分利用的计算能力，形成元宇宙的计算基础设施层\n\r'
+			: 'Harnessing Distributed and Underutilised Computing Powers to form a Computing\nInfrastructure Layer for the Metaverse'
 
 	const btn1 = document.createElement('div')
 	const btn2 = document.createElement('div')
 	btnContainer.append(btn1, btn2)
 	btn1.className = style.btn1
 	btn2.className = style.btn2
-	btn1.innerHTML = 'Join Discord'
-	btn2.innerHTML = 'Read Whitepaper &#xe900;'
+	btn1.innerHTML = lang.lang === 'cn' ? '加入 discord' : 'Join Discord'
+	btn2.innerHTML = lang.lang === 'cn' ? '阅读白皮书&#xe900;' : 'Read Whitepaper &#xe900;'
 
 	btn1.addEventListener('click', (ev) => {
 		console.log('join')
@@ -44,5 +47,4 @@ function page1(root) {
 		console.log('read')
 	})
 }
-
 export { page1 }
