@@ -39,6 +39,8 @@ body {
 }
 .bloom {
 	position: absolute;
+	-webkit-user-drag: none;
+	user-select: none;
 }
 
 .bloom0 {
