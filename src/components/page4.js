@@ -45,8 +45,17 @@ function page4(root) {
 		},
 		{
 			content:
-				lang.lang === 'cn' ? 'Airdrop Community\nToken $VOP' : 'Airdrop\nCommunity\nToken $VOP',
-			time: 'Q3 2022',
+				lang.lang === 'cn'
+					? 'Airdrop Community\nToken $VOP'
+					: 'Consensus Proof of\nStreaming(PoSr)\nTesting',
+			time: 'Q4 2022',
+		},
+		{
+			content:
+				lang.lang === 'cn'
+					? 'Airdrop Community\nToken $VOP'
+					: 'Deploy Cloud Gaming\nEdge Nodes\nin SEA',
+			time: 'Q1 2023',
 		},
 	]
 
