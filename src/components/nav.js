@@ -39,7 +39,7 @@ function nav(root) {
 		window.open('https://twitter.com/Portalverse_Net', '_blank')
 	})
 	discordIcon.addEventListener('click', (ev) => {
-		window.open('https://twitter.com/Portalverse_Net', '_blank')
+		window.open('https://discord.gg/rE328zG7pS', '_blank')
 	})
 
 	const dropdown = document.createElement('div')

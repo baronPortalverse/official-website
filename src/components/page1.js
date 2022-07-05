@@ -40,11 +40,11 @@ function page1(root) {
 	btn2.innerHTML = lang.lang === 'cn' ? '阅读白皮书&#xe900;' : 'Read Whitepaper &#xe900;'
 
 	btn1.addEventListener('click', (ev) => {
-		console.log('join')
+		window.open('https://discord.gg/rE328zG7pS', '_blank')
 	})
 
 	btn2.addEventListener('click', (ev) => {
-		console.log('read')
+		window.open('https://medium.com/@PORTALVERSE_NETWORK', '_blank')
 	})
 }
 export { page1 }
