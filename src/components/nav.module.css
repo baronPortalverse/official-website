@@ -62,7 +62,6 @@
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
-	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-end;
@@ -77,6 +76,7 @@
 }
 .language:hover .drop {
 	display: flex;
+	gap: 22px;
 }
 
 .item {
@@ -84,9 +84,9 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.item:first-child {
+/* .item:first-child {
 	margin-bottom: 22px;
-}
+} */
 .item > span:first-child {
 	margin-right: 15px;
 }

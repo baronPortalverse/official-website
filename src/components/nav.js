@@ -59,14 +59,14 @@ function nav(root) {
 				location.reload()
 			},
 		},
-		{
-			name: 'CN',
-			emoji: '🇨🇳',
-			click() {
-				window.location.href = window.location.href.split('#')[0] + '#cn'
-				location.reload()
-			},
-		},
+		// {
+		// 	name: 'CN',
+		// 	emoji: '🇨🇳',
+		// 	click() {
+		// 		window.location.href = window.location.href.split('#')[0] + '#cn'
+		// 		location.reload()
+		// 	},
+		// },
 	]
 
 	languageMap.map((l) => {
