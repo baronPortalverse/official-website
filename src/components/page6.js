@@ -26,16 +26,64 @@ function page6(root) {
 	const title2 = document.createElement('div')
 	container.appendChild(title2)
 	title2.className = style.title2
-	title2.innerText = lang.lang === 'cn' ? '关注Portalverse的最新动态' : 'Stay updated on Portalverse'
+	title2.innerText =
+		lang.lang === 'cn' ? '关注Portalverse的最新动态' : 'Stay updated on Portalverse'
+
+	const artCon = document.createElement('div')
+	container.appendChild(artCon)
+	artCon.className = style.artCon
 
 	const art1 = document.createElement('div')
-	container.appendChild(art1)
+	artCon.appendChild(art1)
 	art1.className = style.art1
+
+	art1.innerHTML = `<img src=${blog1} />
+    <div class=${style.artTitle}>Introducing<br>Portalverse<br>Protocol</div>
+    <div class=${style.more}>Read More &#xe900;</div>`
+
+	const art2 = document.createElement('div')
+	artCon.appendChild(art2)
+	art2.className = style.art2
+
+	art2.innerHTML = ` <img src=${blog2} />
+    <div class=${style.artTitle}>New Partnership<br>Announcement: PortalVerse<br>and Fusotao Protocol</div>
+    <div class=${style.more}>Read More &#xe900;</div>`
+
+	const art3 = document.createElement('div')
+	artCon.appendChild(art3)
+	art3.className = style.art2
+
+	art3.innerHTML = ` <img src=${blog3} />
+    <div class=${style.artTitle}>New Partnership<br>Announcement: PortalVerse<br>and Octopus Network</div>
+    <div class=${style.more}>Read More &#xe900;</div>`
+
+	art1.addEventListener('click', (ev) => {
+		window.open(
+			'https://medium.com/@PORTALVERSE_NETWORK/what-is-portalverse-2acb4fb1fe4',
+			'_blank'
+		)
+	})
+	art2.addEventListener('click', (ev) => {
+		window.open(
+			'https://medium.com/@PORTALVERSE_NETWORK/new-partnership-announcement-portalverse-network-and-fusotao-protocol-17c790393e9e',
+			'_blank'
+		)
+	})
+	art3.addEventListener('click', (ev) => {
+		window.open(
+			'https://medium.com/@PORTALVERSE_NETWORK/new-partnership-announcement-3ecd69ed7fb3',
+			'_blank'
+		)
+	})
 
 	const btn = document.createElement('div')
 	btn.className = style.btn
 	btn.innerText = lang.lang === 'cn' ? '浏览文章' : 'Browse Articles'
 	container.appendChild(btn)
+
+	btn.addEventListener('click', (ev) => {
+		window.open('https://medium.com/@PORTALVERSE_NETWORK', '_blank')
+	})
 
 	const newsLetter = document.createElement('div')
 	newsLetter.className = style.news

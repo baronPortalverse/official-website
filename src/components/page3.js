@@ -1,8 +1,8 @@
 import style from './page3.module.css'
-import pic1 from '../assets/imgs/cube1.png'
-import pic2 from '../assets/imgs/cube2.png'
-import pic3 from '../assets/imgs/cube3.png'
-import pic4 from '../assets/imgs/cube4.png'
+import pic1 from '../assets/imgs/cube 1.png'
+import pic2 from '../assets/imgs/cube 2.png'
+import pic3 from '../assets/imgs/cube 3.png'
+import pic4 from '../assets/imgs/cube 4.png'
 import { lang } from '../lang'
 /**
  *
