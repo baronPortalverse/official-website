@@ -1,0 +1,124 @@
+.outter {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	display: flex;
+	width: 100%;
+	max-width: 1440px;
+	box-sizing: border-box;
+
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.title1 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 130%;
+
+	text-align: center;
+	letter-spacing: -0.5px;
+
+	color: #f0f0f0;
+	margin-bottom: 10px;
+}
+.title2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 81px;
+	line-height: 120%;
+
+	text-align: center;
+	letter-spacing: -0.0205em;
+
+	background: linear-gradient(
+			258.49deg,
+			rgba(255, 255, 255, 0.2) 46.01%,
+			rgba(225, 46, 240, 0.2) 71.67%
+		),
+		linear-gradient(104.39deg, #ffffff 54.5%, #ffdcd1 72.72%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	margin-bottom: 40px;
+}
+.description {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 120%;
+
+	text-align: center;
+	letter-spacing: -0.0205em;
+
+	color: rgba(220, 220, 220, 0.8);
+	margin-bottom: 140px;
+}
+
+.boxContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 40px;
+	width: 510px;
+
+	background: rgba(22, 28, 36, 0.75);
+
+	border: 1px solid #342a38;
+	border-radius: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.box:first-child {
+	margin-right: 30px;
+}
+
+.boxTitle {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 120%;
+
+	text-align: center;
+	letter-spacing: -0.0205em;
+
+	color: #f0f0f0;
+	margin-bottom: 16px;
+}
+.boxContent {
+	margin-top: 16px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 175%;
+
+	text-align: center;
+
+	color: rgba(220, 220, 220, 0.8);
+}
+.underline1 {
+	width: 80px;
+	height: 4px;
+
+	background: #444cd7;
+}
+.underline2 {
+	width: 80px;
+	height: 4px;
+
+	background: #e12ef0;
+}

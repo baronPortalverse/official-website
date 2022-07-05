@@ -1,0 +1,166 @@
+.outter {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 170px;
+}
+.container {
+	display: flex;
+	width: 100%;
+	max-width: 1440px;
+	box-sizing: border-box;
+
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.title1 {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 120%;
+
+	letter-spacing: -0.0205em;
+
+	color: #f0f0f0;
+	margin-bottom: 20px;
+}
+.title2 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 54px;
+	line-height: 120%;
+
+	letter-spacing: -0.0205em;
+
+	background: linear-gradient(
+			258.49deg,
+			rgba(255, 255, 255, 0.2) 46.01%,
+			rgba(225, 46, 240, 0.2) 71.67%
+		),
+		linear-gradient(104.39deg, #ffffff 54.5%, #ffdcd1 72.72%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	margin-bottom: 50px;
+}
+
+.art1{
+    
+}
+.btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 70px;
+
+	background: #ffffff;
+	border-radius: 20px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+
+	text-align: center;
+
+	color: #171717;
+	user-select: none;
+	cursor: pointer;
+	margin-bottom: 180px;
+}
+
+.news {
+	box-sizing: border-box;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 130px;
+	gap: 10px;
+	width: 1200px;
+
+	background: rgba(22, 28, 36, 0.75);
+
+	border: 1px solid #342a38;
+	border-radius: 20px;
+	overflow: hidden;
+	user-select: none;
+}
+.ghost {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.newsTitle {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 54px;
+	line-height: 120%;
+
+	text-align: center;
+	letter-spacing: -0.0205em;
+
+	color: #ffffff;
+}
+.newsDes {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 120%;
+
+	text-align: center;
+	letter-spacing: -0.0205em;
+
+	color: #ffffff;
+}
+
+.iptCon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	margin-top: 24px;
+}
+.ipt {
+	box-sizing: border-box;
+	padding: 14px 26px;
+
+	width: 358px;
+	height: 64px;
+
+	background: #342a38;
+
+	border: 1px solid #342a38;
+	border-radius: 16px;
+	outline: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 175%;
+
+	color: rgba(220, 220, 220, 0.8);
+}
+.iptBtn {
+	padding: 20px 70px;
+	box-sizing: border-box;
+
+	width: 281px;
+	height: 64px;
+
+	background: #ffffff;
+	border-radius: 20px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+
+	color: #171717;
+}
