@@ -18,7 +18,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    'bootstrap/dist/css/bootstrap-reboot.min.css',
+    'bootstrap/dist/css/bootstrap-grid.min.css',
+    '~/assets/css/main.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -30,10 +34,16 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-gsap-module'],
+  googleFonts: {
+    families: {
+      Inter: [400, 500, 600, 700],
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
