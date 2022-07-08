@@ -55,7 +55,7 @@
 					<h1 id="header" class="text-center shimmer-color">
 						Decentralised Cloud Gaming
 					</h1>
-					<h5 id="about" class="text-center py-2">
+					<h5 id="about" class="text-center py-2 secondary-text">
 						Harnessing Distributed and Underutilised Computing Powers to form a
 						Computing Infrastructure Layer for the Metaverse
 					</h5>
