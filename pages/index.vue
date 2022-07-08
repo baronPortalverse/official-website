@@ -136,9 +136,9 @@ export default {
 					{
 						opacity: 0,
 						x: '-20%',
-						duration: 0.4,
+						duration: 1,
 						stagger: { amount: 0.2 },
-						ease: 'power2.out',
+						ease: 'expo',
 					},
 					'<'
 				)
@@ -147,9 +147,9 @@ export default {
 					{
 						opacity: 0,
 						x: '20%',
-						duration: 0.4,
+						duration: 1,
 						stagger: { amount: 0.2 },
-						ease: 'power2.out',
+						ease: 'expo',
 					},
 					'<'
 				)
