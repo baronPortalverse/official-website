@@ -33,7 +33,7 @@ export default {
 	border: none;
 	/* letter-spacing: 2.5px; */
 
-	padding: 1.25rem 4.375rem;
+	padding: 1.5rem 4.8rem;
 	color: var(--color-bg);
 
 	box-shadow: 0px 0px 20px 1px rgb(150, 150, 150, 0.15);
@@ -43,7 +43,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
 	.button {
-		font-size: 0.8rem;
+		/* font-size: 0.8rem; */
 	}
 }
 

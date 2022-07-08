@@ -38,7 +38,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
 	.button-secondary {
-		font-size: 0.8rem;
+		/* font-size: 0.8rem; */
 	}
 }
 
