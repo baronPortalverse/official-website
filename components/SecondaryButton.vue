@@ -1,42 +1,8 @@
 <template>
 	<div class="py-2">
-		<a
-			v-if="custom"
-			class="button-secondary"
-			target="_blank"
-			rel="noopener noreferrer"
-			:href="link"
-		>
+		<a class="button" target="_blank" rel="noopener noreferrer" :href="link">
 			<slot></slot>
-			<span>
-				<span class="spacer"></span>
-
-				<img
-					style="height: 1em; margin-bottom: 0.1rem; fill: white"
-					src="~/assets/images/arrow-right.svg"
-					alt=""
-				/> </span
-		></a>
-		<nuxt-link v-else :to="link" class="button-secondary">
-			<span v-if="direction === 'left'">
-				<img
-					style="height: 1em; margin-bottom: 0.1rem; transform: rotate(180deg)"
-					src="~/assets/images/arrow-right.svg"
-					alt=""
-				/>
-				<span class="spacer"></span>
-			</span>
-			<slot></slot>
-			<span v-if="direction === 'right'">
-				<span class="spacer"></span>
-
-				<img
-					style="height: 1em; margin-bottom: 0.1rem"
-					src="~/assets/images/arrow-right.svg"
-					alt=""
-				/>
-			</span>
-		</nuxt-link>
+		</a>
 	</div>
 </template>
 
@@ -47,37 +13,26 @@ export default {
 			type: String,
 			default: '/about',
 		},
-		direction: {
-			type: String,
-			default: 'right',
-		},
-		custom: {
-			type: Boolean,
-			default: false,
-		},
 	},
 }
 </script>
 
-<style>
-.button-secondary {
+<style scoped>
+.button {
 	display: inline-block;
 
 	line-height: 100%;
-	/* background: transparent; */
+	background: transparent;
 
 	margin: 0 1rem;
 	font-weight: bold;
 	text-decoration: none;
 
-	border: none;
-	font-size: 1.125rem;
-	font-weight: 700;
-
-	padding: 1.25rem 4.375rem;
 	color: var(--color-text-primary);
 
 	border-radius: 20px;
+
+	box-shadow: none;
 	transition: margin-left 0.4s, box-shadow 0.4s;
 }
 

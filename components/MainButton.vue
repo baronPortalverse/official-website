@@ -1,34 +1,8 @@
 <template>
 	<div class="py-2">
-		<a
-			v-if="custom"
-			class="button"
-			target="_blank"
-			rel="noopener noreferrer"
-			:href="link"
-		>
+		<a class="button" target="_blank" rel="noopener noreferrer" :href="link">
 			<slot></slot>
 		</a>
-		<nuxt-link v-else :to="link" class="button">
-			<span v-if="direction === 'left'">
-				<img
-					style="height: 1em; margin-bottom: 0.1rem; transform: rotate(180deg)"
-					src="~/assets/images/arrow-right.svg"
-					alt=""
-				/>
-				<span class="spacer"></span>
-			</span>
-			<slot></slot>
-			<span v-if="direction === 'right'">
-				<span class="spacer"></span>
-
-				<img
-					style="height: 1em; margin-bottom: 0.1rem"
-					src="~/assets/images/arrow-right.svg"
-					alt=""
-				/>
-			</span>
-		</nuxt-link>
 	</div>
 </template>
 
@@ -38,14 +12,6 @@ export default {
 		link: {
 			type: String,
 			default: '/about',
-		},
-		direction: {
-			type: String,
-			default: 'right',
-		},
-		custom: {
-			type: Boolean,
-			default: false,
 		},
 	},
 }
@@ -70,8 +36,9 @@ export default {
 	padding: 1.25rem 4.375rem;
 	color: var(--color-bg);
 
+	box-shadow: 0px 0px 20px 1px rgb(150, 150, 150, 0.15);
 	border-radius: 20px;
-	transition: margin-left 0.4s, box-shadow 0.4s;
+	transition: box-shadow 0.4s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -81,17 +48,8 @@ export default {
 }
 
 .button:hover {
+	box-shadow: 0px 0px 20px 1px rgb(230, 230, 230, 0.3);
+
 	color: var(--color-bg);
-}
-
-.button > span > span {
-	height: 1rem;
-	margin-left: 0rem;
-	transition: all 0.4s;
-}
-
-.button:hover > span > span {
-	height: 1rem;
-	margin-left: 0.8rem;
 }
 </style>

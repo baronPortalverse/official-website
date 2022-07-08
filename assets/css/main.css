@@ -74,15 +74,30 @@ img {
 
 .shimmer-color {
 
-  
-    /* Text/Heading shimmer */
-  
     background: linear-gradient(258.49deg, rgba(255, 255, 255, 0.2) 46.01%, rgba(225, 46, 240, 0.2) 71.67%), linear-gradient(104.39deg, #FFFFFF 54.5%, #FFDCD1 72.72%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: Animation 5s ease infinite;
 }
+
+  
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%
+  }
+
+  50% {
+    background-position: 91% 100%
+  }
+
+  100% {
+    background-position: 10% 0%
+  }
+}
+
 
 .vh-100 {
 
