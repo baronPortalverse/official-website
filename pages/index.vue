@@ -117,11 +117,22 @@ export default {
 				.from(blooms, {
 					autoAlpha: 0,
 					y: '-50%',
-					duration: 1,
-					ease: 'expo',
+					duration: 0.4,
+					ease: 'power2.out',
 				})
 				.from(
 					buttons,
+					{
+						autoAlpha: 0,
+						y: '-5%',
+						duration: 1,
+						stagger: { amount: 0.2 },
+						ease: 'power2.out',
+					},
+					'<'
+				)
+				.from(
+					control1,
 					{
 						opacity: 0,
 						x: '-20%',
@@ -131,13 +142,6 @@ export default {
 					},
 					'<'
 				)
-				.from(control1, {
-					opacity: 0,
-					x: '-20%',
-					duration: 0.4,
-					stagger: { amount: 0.2 },
-					ease: 'power2.out',
-				})
 				.from(
 					control2,
 					{
