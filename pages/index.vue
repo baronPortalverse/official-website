@@ -22,6 +22,20 @@
 				src="~/assets/images/bloom-right.svg"
 				alt=""
 			/>
+
+			<img
+				id="controler1"
+				style="position: absolute; top: 50vh; left: 0px"
+				src="~/assets/images/controler.png"
+				alt=""
+			/>
+
+			<img
+				id="controler2"
+				style="position: absolute; top: 15vh; right: 0px"
+				src="~/assets/images/controler2.png"
+				alt=""
+			/>
 		</div>
 		<section class="container" style="z-index: 5">
 			<div
@@ -84,6 +98,9 @@ export default {
 
 			const buttons = document.querySelectorAll('.button')
 			const blooms = document.querySelectorAll('.bloom')
+			const control1 = document.getElementById('controler1')
+			const control2 = document.getElementById('controler2')
+
 			// console.log(cards)
 			// animation timeline for headers
 			this.headlineTimeLine = this.$gsap.timeline({ onComplete: done })
@@ -108,6 +125,24 @@ export default {
 					{
 						opacity: 0,
 						x: '-20%',
+						duration: 0.4,
+						stagger: { amount: 0.2 },
+						ease: 'power2.out',
+					},
+					'<'
+				)
+				.from(control1, {
+					opacity: 0,
+					x: '-20%',
+					duration: 0.4,
+					stagger: { amount: 0.2 },
+					ease: 'power2.out',
+				})
+				.from(
+					control2,
+					{
+						opacity: 0,
+						x: '20%',
 						duration: 0.4,
 						stagger: { amount: 0.2 },
 						ease: 'power2.out',
@@ -146,5 +181,12 @@ export default {
 <style scoped>
 section {
 	min-height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+	#controler1,
+	#controler2 {
+		opacity: 0 !important;
+	}
 }
 </style>
