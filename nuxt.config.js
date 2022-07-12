@@ -64,6 +64,11 @@ export default {
       Inter: [400, 500, 600, 700],
     },
   },
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
