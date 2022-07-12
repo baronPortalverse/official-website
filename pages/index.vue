@@ -220,6 +220,27 @@
 								Benefits of Portalverse
 							</h5>
 							<h1 class="shimmer">Roadmap to Market</h1>
+
+							<vue-horizontal>
+								<div class="card text-center my-2 my-lg-0">
+									<img src="~/assets/images/computer.png" alt="" />
+									<h4>Existing Powerful Network</h4>
+									<p class="secondary-text">
+										The most common graphics cards being used for mining were
+										built for gaming. Making them fit for purpose without
+										significant changes.
+									</p>
+								</div>
+								<div class="card text-center my-2 my-lg-0">
+									<img src="~/assets/images/computer.png" alt="" />
+									<h4>Existing Powerful Network</h4>
+									<p class="secondary-text">
+										The most common graphics cards being used for mining were
+										built for gaming. Making them fit for purpose without
+										significant changes.
+									</p>
+								</div>
+							</vue-horizontal>
 						</div>
 					</div>
 				</div>
@@ -230,8 +251,10 @@
 
 <script>
 import SplitType from 'split-type'
+import VueHorizontal from 'vue-horizontal'
 
 export default {
+	components: { VueHorizontal },
 	name: 'IndexPage',
 	transition: {
 		name: 'IndexPage',
