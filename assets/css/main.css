@@ -37,6 +37,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-xxl);
+    font-weight: 800;
 }
 
 h3 {

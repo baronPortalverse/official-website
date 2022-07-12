@@ -1,78 +1,145 @@
 <template>
 	<main>
-		<!-- <img
-			style="position: absolute; top: 0px; z-index: -1; width: 100vw"
-			src="~/assets/images/top-section-bloom.svg"
-			alt=""
-		/> -->
-		<div
-			style="position: absolute; top: 0px; z-index: -1; width: 100vw"
-			class="bloom-group"
-		>
-			<img
-				class="bloom"
-				style="position: absolute; top: 0px; left: 0px"
-				src="~/assets/images/bloom-left.svg"
-				alt=""
-			/>
+		<section>
+			<div class="bloom-group">
+				<img
+					class="bloom"
+					style="position: absolute; top: 0px; left: 0px"
+					src="~/assets/images/bloom-left.svg"
+					alt=""
+				/>
 
-			<img
-				class="bloom"
-				style="position: absolute; top: 0px; right: 0px"
-				src="~/assets/images/bloom-right.svg"
-				alt=""
-			/>
+				<img
+					class="bloom"
+					style="position: absolute; top: 0px; right: 0px"
+					src="~/assets/images/bloom-right.svg"
+					alt=""
+				/>
 
-			<img
-				id="controler1"
-				style="position: absolute; top: 50vh; left: 0px"
-				src="~/assets/images/controler.png"
-				alt=""
-			/>
+				<img
+					id="controler1"
+					style="position: absolute; top: 50vh; left: 0px"
+					src="~/assets/images/controler.png"
+					alt=""
+				/>
 
-			<img
-				id="controler2"
-				style="position: absolute; top: 15vh; right: 0px"
-				src="~/assets/images/controler2.png"
-				alt=""
-			/>
-		</div>
-		<section class="container" style="z-index: 5">
-			<div
-				class="
-					vh-100
-					row
-					justify-content-center
-					align-content-center
-					py-5
-					px-2 px-md-0
-				"
-			>
-				<div class="col-lg-7">
-					<h5 id="subheading" class="text-center shimmer-color">
-						Portalverse Network
-					</h5>
-					<h1 id="header" class="text-center shimmer-color">
-						Decentralised Cloud Gaming
-					</h1>
-					<h5 id="about" class="text-center py-2 secondary-text">
-						Harnessing Distributed and Underutilised Computing Powers to form a
-						Computing Infrastructure Layer for the Metaverse
-					</h5>
-					<div class="d-flex flex-wrap justify-content-center my-5">
-						<main-button
-							id="projects"
-							custom="true"
-							link="https://discord.com/invite/rE328zG7pS"
-							>Join Discord</main-button
-						>
+				<img
+					id="controler2"
+					style="position: absolute; top: 15vh; right: 0px"
+					src="~/assets/images/controler2.png"
+					alt=""
+				/>
+			</div>
+			<div class="container">
+				<div
+					style="z-index: 5"
+					class="
+						vh-100
+						row
+						justify-content-center
+						align-content-center
+						py-5
+						px-2 px-md-0
+					"
+				>
+					<div class="col-lg-7">
+						<h5 id="subheading" class="text-center shimmer-color">
+							Portalverse Network
+						</h5>
+						<h1 id="header" class="text-center shimmer-color">
+							Decentralised Cloud Gaming
+						</h1>
+						<h5 id="about" class="text-center py-2 secondary-text">
+							Harnessing Distributed and Underutilised Computing Powers to form
+							a Computing Infrastructure Layer for the Metaverse
+						</h5>
+						<div class="d-flex flex-wrap justify-content-center my-5">
+							<main-button
+								id="projects"
+								custom="true"
+								link="https://discord.com/invite/rE328zG7pS"
+								>Join Discord</main-button
+							>
+							<secondary-button
+								id="showreels"
+								custom="true"
+								link="https://medium.com/@PORTALVERSE_NETWORK"
+								>Learn More</secondary-button
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-						<secondary-button
-							id="showreels"
-							custom="true"
-							link="https://medium.com/@PORTALVERSE_NETWORK"
-							>Learn More</secondary-button
-						>
+		<section>
+			<!-- <div class="bloom-group">
+				<img
+					class="bloom"
+					style="position: absolute; top: 0px; left: 0px"
+					src="~/assets/images/bloom-left.svg"
+					alt=""
+				/>
+
+				<img
+					class="bloom"
+					style="position: absolute; top: 0px; right: 0px"
+					src="~/assets/images/bloom-right.svg"
+					alt=""
+				/>
+
+				<img
+					id="controler1"
+					style="position: absolute; top: 50vh; left: 0px"
+					src="~/assets/images/controler.png"
+					alt=""
+				/>
+
+				<img
+					id="controler2"
+					style="position: absolute; top: 15vh; right: 0px"
+					src="~/assets/images/controler2.png"
+					alt=""
+				/>
+			</div> -->
+			<div class="container">
+				<div
+					style="z-index: 5"
+					class="
+						vh-100
+						row
+						justify-content-center
+						align-content-center
+						py-5
+						px-2 px-md-0
+					"
+				>
+					<div class="col-lg-7">
+						<h5 id="subheading" class="text-center shimmer-color">
+							Our Vision
+						</h5>
+						<h2 id="header" class="text-center shimmer-color">
+							Community Driven Game Streaming for the Metaverse
+						</h2>
+						<h5 id="about" class="text-center py-2 secondary-text">
+							Allow gamers to use any device they want to play demanding games
+							and allow users with miners or domant computers to particplate in
+							the network and be rewarded
+						</h5>
+						<!-- <div class="d-flex flex-wrap justify-content-center my-5">
+							<main-button
+								id="projects"
+								custom="true"
+								link="https://discord.com/invite/rE328zG7pS"
+								>Join Discord</main-button
+							>
+							<secondary-button
+								id="showreels"
+								custom="true"
+								link="https://medium.com/@PORTALVERSE_NETWORK"
+								>Learn More</secondary-button
+							>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -185,6 +252,13 @@ export default {
 <style scoped>
 section {
 	min-height: 100vh;
+}
+
+.bloom-group {
+	position: relative;
+	top: 0px;
+	z-index: -1;
+	width: 100vw;
 }
 
 @media only screen and (max-width: 768px) {
