@@ -44,7 +44,7 @@
 				>
 					<div class="col-lg-7">
 						<h5 id="subheading" class="text-center">Portalverse Network</h5>
-						<h1 id="header" class="text-center shimmer-color">
+						<h1 id="header" class="text-center shimmer">
 							Decentralised Cloud Gaming
 						</h1>
 						<h5 id="about" class="text-center py-2 secondary-text">
@@ -74,7 +74,7 @@
 			<div class="bloom-group">
 				<img
 					class="bloom"
-					style="position: absolute; top: 10%; left: 10%"
+					style="position: absolute; top: 10%"
 					src="~/assets/images/bloom-alternative.svg"
 				/>
 			</div>
@@ -90,15 +90,17 @@
 					"
 				>
 					<div class="col-lg-9">
-						<h5 id="subheading" class="text-center">Our Vision</h5>
-						<h2 id="header" class="text-center shimmer-color">
-							Community Driven Game Streaming for the Metaverse
-						</h2>
-						<h5 id="about" class="text-center py-2 secondary-text">
-							Allow gamers to use any device they want to play demanding games
-							and allow users with miners or domant computers to particplate in
-							the network and be rewarded
-						</h5>
+						<div class="text-center">
+							<h5 id="subheading">Our Vision</h5>
+							<h2 id="header" class="shimmer">
+								Community Driven Game Streaming for the Metaverse
+							</h2>
+							<h5 id="about" class="py-2 secondary-text">
+								Allow gamers to use any device they want to play demanding games
+								and allow users with miners or domant computers to particplate
+								in the network and be rewarded
+							</h5>
+						</div>
 						<div class="row justify-content-evenly my-5 text-center">
 							<div class="col-lg-6">
 								<div class="card">
@@ -127,7 +129,7 @@
 			<div class="bloom-group">
 				<img
 					class="bloom"
-					style="position: absolute; top: 10%; left: 10%"
+					style="position: absolute; top: 10%"
 					src="~/assets/images/bloom-alternative.svg"
 				/>
 			</div>
@@ -144,9 +146,9 @@
 				>
 					<div class="col-lg-9">
 						<h5 id="subheading" class="text-center">Benefits of Portalverse</h5>
-						<div class="row justify-content-evenly my-5">
+						<div class="row justify-content-evenly my-lg-5 my-0">
 							<div class="col-lg-6">
-								<div class="card">
+								<div class="card text-center my-2 my-lg-0">
 									<img src="~/assets/images/zapper.png" alt="" />
 									<h4>P2P Game Streaming</h4>
 									<p class="secondary-text">
@@ -156,7 +158,7 @@
 								</div>
 							</div>
 							<div class="col-lg-6">
-								<div class="card">
+								<div class="card text-center my-2 my-lg-0">
 									<img src="~/assets/images/cube.png" alt="" />
 									<h4>Optimized Experience</h4>
 									<p class="secondary-text">
@@ -166,11 +168,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="row justify-content-evenly my-5">
+						<div class="row justify-content-evenly my-lg-5 my-0">
 							<div class="col-lg-6">
-								<div class="card">
+								<div class="card text-center my-2 my-lg-0">
 									<img src="~/assets/images/vault.png" alt="" />
-									<h4>Removing Hardware Limits</h4>
+									<h4>No Hardware Limits</h4>
 									<p class="secondary-text">
 										Device constraints are no longer an issue when cloud
 										streaming. Complex experiences are rendered in the cloud.
@@ -178,7 +180,7 @@
 								</div>
 							</div>
 							<div class="col-lg-6">
-								<div class="card">
+								<div class="card text-center my-2 my-lg-0">
 									<img src="~/assets/images/computer.png" alt="" />
 									<h4>Existing Powerful Network</h4>
 									<p class="secondary-text">
@@ -188,6 +190,36 @@
 									</p>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="bloom-group">
+				<img
+					class="bloom"
+					style="position: absolute; top: 10%"
+					src="~/assets/images/bloom-alternative.svg"
+				/>
+			</div>
+			<div class="container">
+				<div
+					style="z-index: 5"
+					class="
+						row
+						justify-content-center
+						align-content-center
+						py-5
+						px-2 px-md-0
+					"
+				>
+					<div class="col-lg-9">
+						<div class="text-center">
+							<h5 id="subheading" class="text-center">
+								Benefits of Portalverse
+							</h5>
+							<h1 class="shimmer">Roadmap to Market</h1>
 						</div>
 					</div>
 				</div>
@@ -221,7 +253,6 @@ export default {
 			// animation timeline for headers
 			this.headlineTimeLine = this.$gsap.timeline({ onComplete: done })
 			this.headlineTimeLine
-
 				.from(about.words, {
 					opacity: 0,
 					duration: 1,
@@ -272,12 +303,11 @@ export default {
 
 			// registering every project with a scroll trigger
 			blooms.forEach((bloom) => {
-				console.log(bloom.element)
 				this.$gsap
 					.timeline({
 						scrollTrigger: {
 							trigger: bloom,
-							start: 'top center+=40%',
+							start: 'top center+=1%',
 							once: true,
 							// markers: true,
 						},
@@ -290,26 +320,8 @@ export default {
 						stagger: { amount: 0.4 },
 					})
 			})
-
-			// project section animations
-			// const timelineProjects = this.$gsap.timeline()
-			// timelineProjects
 		},
-		leave(el, done) {
-			// projects
-			// const projects = document.querySelectorAll('.notSelected')
-			// this.$gsap.timeline({ onComplete: done }).to(projects, {
-			// 	opacity: 0,
-			// 	duration: 0.4,
-			// 	ease: 'power2.out',
-			// 	stagger: { duration: 0.2 },
-			// })
-			// .to('.chosen', {
-			// 	scale: 1.1,
-			// 	duration: 0.6,
-			// 	ease: 'power2.out',
-			// })
-		},
+		leave(el, done) {},
 	},
 	data() {
 		return {
@@ -339,6 +351,11 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+	.bloom-group {
+		/* overflow: hidden; */
+		width: 100vw;
+	}
+
 	#controler1,
 	#controler2 {
 		opacity: 0 !important;
