@@ -407,7 +407,7 @@ export default {
 
 <style scoped>
 section {
-	min-height: 100vh;
+	/* min-height: 100vh; */
 }
 
 .bloom-group {

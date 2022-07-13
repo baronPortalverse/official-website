@@ -18,14 +18,14 @@ body {
 
   --color-bg: #171717;
 
-  --color-card-bg: #ffffff;
+  --color-card-bg: #161C24;
   --color-link-hover: #919191;
 
   --color-text-primary: #F0F0F0;
   --color-text-secondary: #DCDCDC;
   --color-text-white: #ffffff;
 
-
+--card-size: 25rem;
     color: var(--color-text-primary);
   --border-radius: 20px;
 }
