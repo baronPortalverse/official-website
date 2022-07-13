@@ -103,22 +103,22 @@
 						</div>
 						<div class="row justify-content-evenly my-5 text-center">
 							<div class="col-lg-6">
-								<div class="card">
+								<basic-card>
 									<h4>Players</h4>
 									<p class="secondary-text">
 										Play with content in the metaverse of their terms without
 										hardware limitations or latency issues
 									</p>
-								</div>
+								</basic-card>
 							</div>
 							<div class="col-lg-6">
-								<div class="card">
+								<basic-card>
 									<h4>Miners</h4>
 									<p class="secondary-text">
 										Rewards for utilizing dormant hardware or repurposing mining
 										resources to support the network
 									</p>
-								</div>
+								</basic-card>
 							</div>
 						</div>
 					</div>
@@ -148,39 +148,39 @@
 						<h5 id="subheading" class="text-center">Benefits of Portalverse</h5>
 						<div class="row justify-content-evenly my-lg-5 my-0">
 							<div class="col-lg-6">
-								<div class="card text-center my-2 my-lg-0">
+								<basic-card>
 									<img src="~/assets/images/zapper.png" alt="" />
 									<h4>P2P Game Streaming</h4>
 									<p class="secondary-text">
 										Decentralised rendering of games will lead to lower latency
 										and the ability for the service to scale with demand.
 									</p>
-								</div>
+								</basic-card>
 							</div>
 							<div class="col-lg-6">
-								<div class="card text-center my-2 my-lg-0">
+								<basic-card>
 									<img src="~/assets/images/cube.png" alt="" />
 									<h4>Optimized Experience</h4>
 									<p class="secondary-text">
 										Developers can focus quality metaverse experiences without
 										hardware limitations and a consistent development workflow.
 									</p>
-								</div>
+								</basic-card>
 							</div>
 						</div>
 						<div class="row justify-content-evenly my-lg-5 my-0">
 							<div class="col-lg-6">
-								<div class="card text-center my-2 my-lg-0">
+								<basic-card>
 									<img src="~/assets/images/vault.png" alt="" />
 									<h4>No Hardware Limits</h4>
 									<p class="secondary-text">
 										Device constraints are no longer an issue when cloud
 										streaming. Complex experiences are rendered in the cloud.
 									</p>
-								</div>
+								</basic-card>
 							</div>
 							<div class="col-lg-6">
-								<div class="card text-center my-2 my-lg-0">
+								<basic-card>
 									<img src="~/assets/images/computer.png" alt="" />
 									<h4>Existing Powerful Network</h4>
 									<p class="secondary-text">
@@ -188,7 +188,7 @@
 										built for gaming. Making them fit for purpose without
 										significant changes.
 									</p>
-								</div>
+								</basic-card>
 							</div>
 						</div>
 					</div>
@@ -221,26 +221,25 @@
 							</h5>
 							<h1 class="shimmer">Roadmap to Market</h1>
 
-							<vue-horizontal>
-								<div class="card text-center my-2 my-lg-0">
-									<img src="~/assets/images/computer.png" alt="" />
-									<h4>Existing Powerful Network</h4>
-									<p class="secondary-text">
-										The most common graphics cards being used for mining were
-										built for gaming. Making them fit for purpose without
-										significant changes.
-									</p>
-								</div>
-								<div class="card text-center my-2 my-lg-0">
-									<img src="~/assets/images/computer.png" alt="" />
-									<h4>Existing Powerful Network</h4>
-									<p class="secondary-text">
-										The most common graphics cards being used for mining were
-										built for gaming. Making them fit for purpose without
-										significant changes.
-									</p>
-								</div>
-							</vue-horizontal>
+							<basic-card>
+								<img src="~/assets/images/computer.png" alt="" />
+								<h4>Existing Powerful Network</h4>
+								<p class="secondary-text">
+									The most common graphics cards being used for mining were
+									built for gaming. Making them fit for purpose without
+									significant changes.
+								</p>
+							</basic-card>
+
+							<basic-card>
+								<img src="~/assets/images/computer.png" alt="" />
+								<h4>Existing Powerful Network</h4>
+								<p class="secondary-text">
+									The most common graphics cards being used for mining were
+									built for gaming. Making them fit for purpose without
+									significant changes.
+								</p>
+							</basic-card>
 						</div>
 					</div>
 				</div>
@@ -251,10 +250,8 @@
 
 <script>
 import SplitType from 'split-type'
-import VueHorizontal from 'vue-horizontal'
 
 export default {
-	components: { VueHorizontal },
 	name: 'IndexPage',
 	transition: {
 		name: 'IndexPage',
@@ -364,13 +361,6 @@ section {
 	top: 0px;
 	z-index: -1;
 	width: 100vw;
-}
-
-.card {
-	background: rgba(22, 28, 36, 0.75);
-	border: 1px #342a38 solid;
-	padding: 2.5rem;
-	border-radius: 1.25rem;
 }
 
 @media only screen and (max-width: 768px) {
