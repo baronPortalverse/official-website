@@ -247,6 +247,58 @@
 				</div>
 			</div>
 		</section>
+
+		<section>
+			<div class="bloom-group">
+				<img
+					class="bloom"
+					style="position: absolute; top: 10%; right: 0px"
+					src="~/assets/images/purple-bloom.svg"
+				/>
+			</div>
+			<div class="container">
+				<div
+					style="z-index: 5"
+					class="
+						row
+						justify-content-center
+						align-content-center
+						py-5
+						px-2 px-md-0
+					"
+				>
+					<div class="col-lg-9">
+						<div class="text-center">
+							<h3 id="subheading" class="text-center shimmer">
+								Investors and Partners
+							</h3>
+						</div>
+						<div class="row my-5">
+							<div class="col-lg-4">
+								<img
+									src="~/assets/images/investors/octopus-network.png"
+									alt=""
+								/>
+							</div>
+							<div class="col-lg-4">
+								<img src="~/assets/images/investors/fuso-tau.png" alt="" />
+							</div>
+							<div class="col-lg-4">
+								<img src="~/assets/images/investors/near-logo.png" alt="" />
+							</div>
+						</div>
+						<div class="row justify-content-center my-5">
+							<div class="col-lg-4">
+								<img src="~/assets/images/investors/big-brain.png" alt="" />
+							</div>
+							<div class="col-lg-4">
+								<img src="~/assets/images/investors/congitent.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 </template>
 
