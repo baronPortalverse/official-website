@@ -144,7 +144,7 @@
 						px-2 px-md-0
 					"
 				>
-					<div class="col-lg-9">
+					<div class="col-lg-9 text-center">
 						<h5 id="subheading" class="text-center">Benefits of Portalverse</h5>
 						<div class="row justify-content-evenly my-lg-5 my-0">
 							<div class="col-lg-6">
@@ -220,26 +220,28 @@
 								Benefits of Portalverse
 							</h5>
 							<h1 class="shimmer">Roadmap to Market</h1>
+						</div>
+						<div class="row my-5">
+							<div class="col-lg-4">
+								<basic-card>
+									<border-tag>Q1 2022</border-tag>
+									<h4>Complete P2P Streaming For Beta Testing</h4>
+								</basic-card>
+							</div>
+							<div class="col-lg-4">
+								<basic-card>
+									<border-tag>Q2 2022</border-tag>
 
-							<basic-card>
-								<img src="~/assets/images/computer.png" alt="" />
-								<h4>Existing Powerful Network</h4>
-								<p class="secondary-text">
-									The most common graphics cards being used for mining were
-									built for gaming. Making them fit for purpose without
-									significant changes.
-								</p>
-							</basic-card>
+									<h4>Beta App for Streaming Games</h4>
+								</basic-card>
+							</div>
+							<div class="col-lg-4">
+								<basic-card>
+									<border-tag>Q3 2022</border-tag>
 
-							<basic-card>
-								<img src="~/assets/images/computer.png" alt="" />
-								<h4>Existing Powerful Network</h4>
-								<p class="secondary-text">
-									The most common graphics cards being used for mining were
-									built for gaming. Making them fit for purpose without
-									significant changes.
-								</p>
-							</basic-card>
+									<h4>Airdrop Community Token $VOP</h4>
+								</basic-card>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -361,6 +363,15 @@ section {
 	top: 0px;
 	z-index: -1;
 	width: 100vw;
+}
+
+.btn-gradient-2 {
+	line-height: 4rem;
+
+	background: linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+		linear-gradient(90deg, #da59ff 0%, #7265ff 34.38%, #6ab4ff 100%) border-box;
+	border-radius: 50em;
+	border: 4px solid transparent;
 }
 
 @media only screen and (max-width: 768px) {

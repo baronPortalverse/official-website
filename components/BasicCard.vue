@@ -1,5 +1,5 @@
 <template>
-	<div class="card text-center my-2 my-lg-0">
+	<div class="card my-2 my-lg-0">
 		<slot></slot>
 	</div>
 </template>
