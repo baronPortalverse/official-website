@@ -5,14 +5,14 @@
 				<img
 					class="bloom"
 					style="position: absolute; top: 0px; left: 0px"
-					src="~/assets/images/bloom-left.svg"
+					src="~/assets/images/blooms/bloom-left.svg"
 					alt=""
 				/>
 
 				<img
 					class="bloom"
 					style="position: absolute; top: 0px; right: 0px"
-					src="~/assets/images/bloom-right.svg"
+					src="~/assets/images/blooms/bloom-right.svg"
 					alt=""
 				/>
 
@@ -74,8 +74,8 @@
 			<div class="bloom-group">
 				<img
 					class="bloom"
-					style="position: absolute; top: 10%"
-					src="~/assets/images/bloom-alternative.svg"
+					style="position: absolute"
+					src="~/assets/images/blooms/bloom-alternative.svg"
 				/>
 			</div>
 			<div class="container">
@@ -129,8 +129,8 @@
 			<div class="bloom-group">
 				<img
 					class="bloom"
-					style="position: absolute; top: 10%"
-					src="~/assets/images/bloom-alternative.svg"
+					style="position: absolute"
+					src="~/assets/images/blooms/bloom-green.svg"
 				/>
 			</div>
 			<div class="container">
@@ -144,11 +144,11 @@
 						px-2 px-md-0
 					"
 				>
-					<div class="col-lg-9 text-center">
+					<div class="col-lg-9">
 						<h4 id="subheading" class="text-center">
 							Benefits of Portalverse Network
 						</h4>
-						<div class="row justify-content-evenly my-lg-5 my-0">
+						<div class="row justify-content-evenly my-lg-5 my-0 text-center">
 							<div class="col-lg-6">
 								<basic-card>
 									<img src="~/assets/images/zapper.png" alt="" />
@@ -170,7 +170,7 @@
 								</basic-card>
 							</div>
 						</div>
-						<div class="row justify-content-evenly my-lg-5 my-0">
+						<div class="row justify-content-evenly my-lg-5 my-0 text-center">
 							<div class="col-lg-6">
 								<basic-card>
 									<img src="~/assets/images/vault.png" alt="" />
@@ -201,8 +201,8 @@
 			<div class="bloom-group">
 				<img
 					class="bloom"
-					style="position: absolute; top: 10%"
-					src="~/assets/images/bloom-alternative.svg"
+					style="position: absolute"
+					src="~/assets/images/blooms/bloom-alternative.svg"
 				/>
 			</div>
 			<div class="container">
@@ -216,7 +216,7 @@
 						px-2 px-md-0
 					"
 				>
-					<div class="col-lg-9">
+					<div class="col-lg-10">
 						<div class="text-center">
 							<h5 id="subheading">Milestones</h5>
 							<h1 class="shimmer">Roadmap to Market</h1>
@@ -249,13 +249,13 @@
 		</section>
 
 		<section>
-			<div class="bloom-group">
+			<!-- <div class="bloom-group">
 				<img
 					class="bloom"
-					style="position: absolute; top: 10%; right: 0px"
-					src="~/assets/images/purple-bloom.svg"
+					style="position: absolute; right: 0px"
+					src="~/assets/images/blooms/purple-bloom.svg"
 				/>
-			</div>
+			</div> -->
 			<div class="container">
 				<div
 					style="z-index: 5"
@@ -294,6 +294,64 @@
 							<div class="col-lg-4">
 								<img src="~/assets/images/investors/congitent.png" alt="" />
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="bloom-group">
+				<img
+					class="bloom"
+					style="position: absolute; right: 0px"
+					src="~/assets/images/blooms/purple-bloom.svg"
+				/>
+			</div>
+			<div class="container">
+				<div
+					style="z-index: 5"
+					class="
+						row
+						justify-content-center
+						align-content-center
+						py-5
+						px-2 px-md-0
+					"
+				>
+					<div class="col-lg-9">
+						<div class="text-center">
+							<h5>Latest Posts</h5>
+							<h3 id="subheading" class="text-center shimmer">
+								Stay Updated on Portalverse
+							</h3>
+						</div>
+						<div class="row my-5">
+							<div class="col-lg-6">
+								<media-card
+									image="/article-thumbs/portaverse-meta-image.jpg"
+									link="https://medium.com/@PORTALVERSE_NETWORK/what-is-portalverse-2acb4fb1fe4"
+									><h4>Introducing Portalverse Protocol</h4>
+								</media-card>
+							</div>
+							<div class="col-lg-6">
+								<media-card
+									title="Introducing Portalverse Protocol"
+									image="/article-thumbs/seed-finding-2.jpg"
+								>
+									<h4>Portalverse Network Seed Round Announced</h4>
+								</media-card>
+							</div>
+							<!-- <div class="col-lg-4">
+								<media-card title="Introducing Portalverse Protocol">
+									<h4>Introducing Portalverse Protocol</h4>
+								</media-card>
+							</div> -->
+						</div>
+						<div class="d-flex flex-wrap justify-content-center my-5">
+							<main-button link="https://medium.com/@PORTALVERSE_NETWORK">
+								Browse Articles
+							</main-button>
 						</div>
 					</div>
 				</div>
@@ -412,18 +470,9 @@ section {
 
 .bloom-group {
 	position: relative;
-	top: 0px;
+
 	z-index: -1;
 	width: 100vw;
-}
-
-.btn-gradient-2 {
-	line-height: 4rem;
-
-	background: linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
-		linear-gradient(90deg, #da59ff 0%, #7265ff 34.38%, #6ab4ff 100%) border-box;
-	border-radius: 50em;
-	border: 4px solid transparent;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,41 +1,20 @@
 <template>
-	<a :href="link" target="_blank" rel="noopener noreferrer" class="card">
-		<div :style="{ backgroundImage: `url(${image})` }" class="card-img">
-			<!-- <div class="status-chip">{{ type }}</div> -->
-		</div>
+	<div class="card">
+		<div :style="{ backgroundImage: `url(${image})` }" class="card-img"></div>
 		<div class="card-contents">
-			<h3 class="title">{{ title }}</h3>
-			<!-- <div class="chips">
-				<div v-for="chip in chips" :key="chip" class="chip">{{ chip }}</div>
-			</div> -->
+			<a :href="link" target="_blank" rel="noopener noreferrer">
+				<slot></slot>
+				<small
+					>Read More <img src="~/assets/images/arrow-right.svg" alt=""
+				/></small>
+			</a>
 		</div>
-	</a>
+	</div>
 </template>
 
 <script>
 export default {
 	props: {
-		type: {
-			type: String,
-			default: 'Podcast',
-		},
-		title: {
-			type: String,
-			default: 'Can You Invest While In Debt?',
-		},
-		subtitle: {
-			type: String,
-			default: 'Equity Mates',
-		},
-		chips: {
-			type: Array,
-			default: () => [
-				'Good for getting started',
-				'Investing',
-				'Debt',
-				'My Best Self',
-			],
-		},
 		image: {
 			type: String,
 			default: 'https://source.unsplash.com/340x250/?investing',
@@ -50,41 +29,44 @@ export default {
 
 <style scoped>
 .card {
-	background: var(--color-card-bg);
-	/* Light Shadow */
-	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
-	border-radius: 20px;
+	border: 1px #342a38 solid;
+	border-radius: 1.25rem;
+	transform: translate(0px, 0px);
+	box-shadow: 0px 0px 0px 0px #342a38;
+	background: rgba(22, 28, 36, 0.75);
 
-	max-width: calc(var(--card-size) * 0.85);
+	/* max-width: calc(var(--card-size) * 0.85); */
 	min-height: var(--card-size);
-
-	border: none;
-	margin: 1em;
 
 	text-decoration: none;
 	color: var(--color-text-primary);
 
-	transform: translate(0px, 0px);
-	transition: transform 0.4s, box-shadow 0.4s;
+	transition: all 0.4s;
 }
 
 .card:hover {
-	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
 	transform: translate(0px, -4px);
+
+	box-shadow: 0px 2px 10px 0px rgba(165, 165, 165, 0.1);
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text-primary);
 }
 
 .card-img {
 	height: calc(var(--card-size) * 0.625);
 	background: url('https://source.unsplash.com/340x250/?investing'), #c4c4c4;
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 
 	border-radius: 20px 20px 0px 0px;
 }
 
 .card-contents {
-	margin-top: 0.5em;
-	padding: 0.8em 1.6em;
+	padding: 1.2rem 1.6rem;
+	border-radius: 0px 0px 20px 20px;
 }
 
 .subtitle {
@@ -93,43 +75,8 @@ export default {
 	color: var(--color-text-secondary);
 }
 
-.title {
-	font-weight: 600;
-
-	font-size: 1.5em;
-}
-
 .card-contents .subtitle,
 .title {
 	margin: 0.4em 0;
-}
-
-.chips {
-	margin-top: 1.5em;
-
-	display: flex;
-	flex-flow: row wrap;
-}
-
-.status-chip {
-	position: absolute;
-	top: calc(var(--card-size) * 0.5);
-	margin: 0 1.6em;
-	text-transform: uppercase;
-
-	border-radius: 20px;
-	background: var(--color-primary);
-	color: var(--color-text-white);
-	padding: 0.3em 0.6em;
-}
-
-.chip {
-	margin-right: 0.8em;
-	margin-bottom: 0.8em;
-
-	border-radius: 20px;
-	background: var(--color-incomplete-gray);
-	color: var(--color-text-secondary);
-	padding: 0.3em 0.6em;
 }
 </style>

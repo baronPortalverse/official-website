@@ -3,9 +3,9 @@
 		<div class="container p-3">
 			<div class="d-flex align-items-center">
 				<div class="px-2">
-					<p class="secondary-text">
+					<small class="secondary-text">
 						Portalverse Network 2022. All rights reserved.
-					</p>
+					</small>
 				</div>
 
 				<div id="links" class="ms-auto">
