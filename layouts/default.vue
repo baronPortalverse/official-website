@@ -1,7 +1,8 @@
 <template>
 	<div>
-		<nav-bar />
+		<app-nav />
 		<nuxt />
+		<app-footer />
 	</div>
 </template>
 

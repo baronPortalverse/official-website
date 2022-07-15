@@ -106,8 +106,8 @@
 								<basic-card>
 									<h4>Players</h4>
 									<p class="secondary-text">
-										Play with content in the metaverse of their terms without
-										hardware limitations or latency issues
+										Experience the best content in the metaverse on their terms
+										without hardware limitations or latency issues
 									</p>
 								</basic-card>
 							</div>
@@ -115,8 +115,8 @@
 								<basic-card>
 									<h4>Miners</h4>
 									<p class="secondary-text">
-										Rewards for utilizing dormant hardware or repurposing mining
-										resources to support the network
+										Creates incentive to utilizing dormant gaming hardware or
+										repurposing mining resources to support the network
 									</p>
 								</basic-card>
 							</div>
@@ -145,7 +145,9 @@
 					"
 				>
 					<div class="col-lg-9 text-center">
-						<h5 id="subheading" class="text-center">Benefits of Portalverse</h5>
+						<h4 id="subheading" class="text-center">
+							Benefits of Portalverse Network
+						</h4>
 						<div class="row justify-content-evenly my-lg-5 my-0">
 							<div class="col-lg-6">
 								<basic-card>
@@ -216,9 +218,7 @@
 				>
 					<div class="col-lg-9">
 						<div class="text-center">
-							<h5 id="subheading" class="text-center">
-								Benefits of Portalverse
-							</h5>
+							<h5 id="subheading">Milestones</h5>
 							<h1 class="shimmer">Roadmap to Market</h1>
 						</div>
 						<div class="row my-5">
