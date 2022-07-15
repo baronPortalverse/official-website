@@ -1,5 +1,5 @@
 <template>
-	<div class="card">
+	<div class="card my-2 my-lg-0">
 		<div :style="{ backgroundImage: `url(${image})` }" class="card-img"></div>
 		<div class="card-contents">
 			<a :href="link" target="_blank" rel="noopener noreferrer">

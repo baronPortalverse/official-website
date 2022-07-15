@@ -9,7 +9,7 @@
 				<div id="links" class="ms-auto">
 					<a
 						class="px-2"
-						href="https://google.com"
+						href="https://medium.com/@PORTALVERSE_NETWORK"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -17,7 +17,7 @@
 					</a>
 					<a
 						class="px-2"
-						href="https://google.com"
+						href="https://discord.com/invite/rE328zG7pS"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -25,7 +25,7 @@
 					</a>
 					<a
 						class="px-2"
-						href="https://google.com"
+						href="https://twitter.com/Portalverse_Net"
 						target="_blank"
 						rel="noopener noreferrer"
 					>

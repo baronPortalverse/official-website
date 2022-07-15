@@ -268,12 +268,12 @@
 					"
 				>
 					<div class="col-lg-9">
-						<div class="text-center">
+						<div class="text-center mb-4">
 							<h3 id="subheading" class="text-center shimmer">
 								Investors and Partners
 							</h3>
 						</div>
-						<div class="row my-5">
+						<div class="row my-3 text-center">
 							<div class="col-lg-4">
 								<img
 									src="~/assets/images/investors/octopus-network.png"
@@ -287,7 +287,7 @@
 								<img src="~/assets/images/investors/near-logo.png" alt="" />
 							</div>
 						</div>
-						<div class="row justify-content-center my-5">
+						<div class="row justify-content-center my-3 text-center">
 							<div class="col-lg-4">
 								<img src="~/assets/images/investors/big-brain.png" alt="" />
 							</div>
