@@ -14,7 +14,7 @@ body {
   --font-size-lg: clamp(25px, 0.79vw + 21.82px, 31.99px);
   --font-size-xl: clamp(31.25px, 1.59vw + 24.89px, 45.23px);
   --font-size-xxl: clamp(39.06px, 2.83vw + 27.74px, 90px);
-  --font-size-xxxl: clamp(48.83px, 4.73vw + 29.91px, 140.5px);
+  --font-size-xxxl: clamp(48.83px, 4.73vw + 29.91px, 120px);
 
   --color-bg: #171717;
 

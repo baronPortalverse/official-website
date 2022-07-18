@@ -42,7 +42,7 @@
 						px-2 px-md-0
 					"
 				>
-					<div class="col-lg-7 text-center">
+					<div class="col-lg-7 col-xl-9 text-center">
 						<h5 id="subheading">Portalverse Network</h5>
 						<h1 id="header" class="shimmer header-animate">
 							Decentralised Cloud Gaming
@@ -216,7 +216,7 @@
 						px-2 px-md-0
 					"
 				>
-					<div class="col-lg-10">
+					<div class="col-lg-10 col-xl-11">
 						<div class="text-center">
 							<h5 id="subheading">Milestones</h5>
 							<h1 class="shimmer header-animate">Roadmap to Market</h1>
@@ -482,12 +482,11 @@ export default {
 
 <style scoped>
 section {
-	min-height: 70vh;
+	min-height: 60vh;
 }
 
 .bloom-group {
 	position: relative;
-
 	z-index: -1;
 	width: 100vw;
 }
