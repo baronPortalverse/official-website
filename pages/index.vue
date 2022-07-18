@@ -6,7 +6,7 @@
 					class="bloom"
 					style="position: absolute; top: 0px; left: 0px"
 					src="~/assets/images/blooms/bloom-left.svg"
-					alt=""
+					alt="left-bloom"
 				/>
 
 				<img
