@@ -1,5 +1,5 @@
 <template>
-	<nav>
+	<nav id="navigation">
 		<div class="container p-3">
 			<div class="d-flex align-items-center">
 				<div class="logo">
@@ -38,7 +38,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+	mounted() {
+		this.$gsap.from('#navigation', {
+			opacity: 0,
+			y: '-20%',
+			delay: 0.4,
+			duration: 1,
+			ease: 'expo',
+		})
+	},
+}
 </script>
 
 <style scoped>
@@ -56,31 +66,18 @@ nav {
 	mix-blend-mode: normal;
 	backdrop-filter: blur(20px);
 }
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-}
 
-li {
-	float: left;
-}
-
-li a {
-	display: block;
-	color: white;
+#links a {
+	display: inline-block;
+	color: var(--color-text-primary);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	transform: scale(1);
+	transition: all 0.4s;
 }
 
-li a:hover:not(.active) {
-	background-color: #111;
-}
-
-.active {
-	background-color: #04aa6d;
+#links a:hover {
+	transform: scale(1.2);
 }
 </style>

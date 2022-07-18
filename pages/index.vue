@@ -42,12 +42,12 @@
 						px-2 px-md-0
 					"
 				>
-					<div class="col-lg-7">
-						<h5 id="subheading" class="text-center">Portalverse Network</h5>
-						<h1 id="header" class="text-center shimmer">
+					<div class="col-lg-7 text-center">
+						<h5 id="subheading">Portalverse Network</h5>
+						<h1 id="header" class="shimmer header-animate">
 							Decentralised Cloud Gaming
 						</h1>
-						<h5 id="about" class="text-center py-2 secondary-text">
+						<h5 id="about" class="py-2 secondary-text">
 							Harnessing Distributed and Underutilised Computing Powers to form
 							a Computing Infrastructure Layer for the Metaverse
 						</h5>
@@ -91,8 +91,8 @@
 				>
 					<div class="col-lg-9">
 						<div class="text-center">
-							<h5 id="subheading">Our Vision</h5>
-							<h2 id="header" class="shimmer">
+							<h5>Our Vision</h5>
+							<h2 class="shimmer header-animate">
 								Community Driven Game Streaming for the Metaverse
 							</h2>
 							<h5 id="about" class="py-2 secondary-text">
@@ -219,7 +219,7 @@
 					<div class="col-lg-10">
 						<div class="text-center">
 							<h5 id="subheading">Milestones</h5>
-							<h1 class="shimmer">Roadmap to Market</h1>
+							<h1 class="shimmer header-animate">Roadmap to Market</h1>
 						</div>
 						<div class="row my-5">
 							<div class="col-lg-4">
@@ -248,7 +248,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section style="display: flex; align-items: center">
 			<!-- <div class="bloom-group">
 				<img
 					class="bloom"
@@ -269,7 +269,7 @@
 				>
 					<div class="col-lg-9">
 						<div class="text-center mb-4">
-							<h3 id="subheading" class="text-center shimmer">
+							<h3 id="subheading" class="shimmer header-animate">
 								Investors and Partners
 							</h3>
 						</div>
@@ -301,10 +301,10 @@
 		</section>
 
 		<section>
-			<div class="bloom-group">
+			<div class="bloom-group" style="max-height: 20vh">
 				<img
 					class="bloom"
-					style="position: absolute; right: 0px"
+					style="position: absolute; right: 0px; max-height: 100vh"
 					src="~/assets/images/blooms/purple-bloom.svg"
 				/>
 			</div>
@@ -322,7 +322,7 @@
 					<div class="col-lg-9">
 						<div class="text-center">
 							<h5>Latest Posts</h5>
-							<h3 id="subheading" class="text-center shimmer">
+							<h3 id="subheading" class="shimmer header-animate">
 								Stay Updated on Portalverse
 							</h3>
 						</div>
@@ -338,6 +338,7 @@
 								<media-card
 									title="Introducing Portalverse Protocol"
 									image="/article-thumbs/seed-finding-2.jpg"
+									link="https://medium.com/@PORTALVERSE_NETWORK/decentralized-cloud-gaming-platform-portalverse-network-closes-multi-million-dollar-seed-funding-776b050399cb"
 								>
 									<h4>Portalverse Network Seed Round Announced</h4>
 								</media-card>
@@ -381,10 +382,11 @@ export default {
 			const control1 = document.getElementById('controler1')
 			const control2 = document.getElementById('controler2')
 
-			// console.log(cards)
+			const animatedHeaders = document.querySelectorAll('.header-animate')
+
 			// animation timeline for headers
-			this.headlineTimeLine = this.$gsap.timeline({ onComplete: done })
-			this.headlineTimeLine
+			this.$gsap
+				.timeline({ onComplete: done })
 				.from(about.words, {
 					opacity: 0,
 					duration: 1,
@@ -393,12 +395,6 @@ export default {
 
 					ease: 'power2.out',
 				})
-				// .from(blooms, {
-				// 	autoAlpha: 0,
-				// 	y: '-10%',
-				// 	duration: 1,
-				// 	ease: 'power2.out',
-				// })
 				.from(
 					buttons,
 					{
@@ -433,7 +429,7 @@ export default {
 					'<'
 				)
 
-			// registering every project with a scroll trigger
+			// registering every bloom with a scroll trigger
 			blooms.forEach((bloom) => {
 				this.$gsap
 					.timeline({
@@ -445,6 +441,27 @@ export default {
 						},
 					})
 					.from(bloom, {
+						// y: '-10%',
+						delay: 0.4,
+						autoAlpha: 0,
+						duration: 1,
+						ease: 'ease',
+						stagger: { amount: 0.4 },
+					})
+			})
+
+			// registering every element with animate-header with a scroll trigger
+			animatedHeaders.forEach((header) => {
+				this.$gsap
+					.timeline({
+						scrollTrigger: {
+							trigger: header,
+							start: 'top center+=20%',
+							once: true,
+							// markers: true,
+						},
+					})
+					.from(header, {
 						// y: '-10%',
 						autoAlpha: 0,
 						duration: 1,
@@ -465,7 +482,7 @@ export default {
 
 <style scoped>
 section {
-	/* min-height: 100vh; */
+	min-height: 70vh;
 }
 
 .bloom-group {

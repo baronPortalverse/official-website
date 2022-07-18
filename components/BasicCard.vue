@@ -16,12 +16,12 @@ export default {}
 	border-radius: 1.25rem;
 	transform: translate(0px, 0px);
 	box-shadow: 0px 0px 0px 0px #342a38;
-	transition: all 0.4s;
+	transition: all 0.2s ease-in-out;
 }
 
 .card:hover {
-	box-shadow: 0px 2px 10px 0px rgba(165, 165, 165, 0.1);
+	box-shadow: 0px 6px 10px 0px rgba(165, 165, 165, 0.1);
 
-	transform: translate(0px, -4px);
+	transform: translate(0px, -6px);
 }
 </style>
