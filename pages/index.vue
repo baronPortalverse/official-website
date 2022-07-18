@@ -487,6 +487,7 @@ section {
 
 .bloom-group {
 	position: relative;
+
 	z-index: -1;
 	width: 100vw;
 }
