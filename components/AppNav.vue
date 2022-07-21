@@ -71,7 +71,6 @@ nav {
 	display: inline-block;
 	color: var(--color-text-primary);
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
 	transform: scale(1);
 	transition: all 0.4s;
@@ -79,5 +78,13 @@ nav {
 
 #links a:hover {
 	transform: scale(1.2);
+}
+
+/* mobile css */
+
+@media only screen and (max-width: 768px) {
+	.logo {
+		max-width: 50vw;
+	}
 }
 </style>
