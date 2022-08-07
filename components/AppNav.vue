@@ -7,14 +7,6 @@
 				</div>
 
 				<div id="links" class="ms-auto">
-        	<a
-						class="px-2"
-						href="https://github.com/Portalvserse-Network"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img src="~/assets/images/icons/github.svg" alt="Github" />
-					</a>
 					<a
 						class="px-2"
 						href="https://medium.com/@PORTALVERSE_NETWORK"
@@ -38,6 +30,14 @@
 						rel="noopener noreferrer"
 					>
 						<img src="~/assets/images/icons/twitter.svg" alt="Twitter" />
+					</a>
+          <a
+						class="px-2"
+						href="https://github.com/Portalvserse-Network"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src="~/assets/images/icons/github.svg" alt="Github" />
 					</a>
 				</div>
 			</div>
