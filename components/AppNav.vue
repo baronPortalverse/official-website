@@ -7,6 +7,14 @@
 				</div>
 
 				<div id="links" class="ms-auto">
+        		<a
+						class="px-2"
+						href="https://medium.com/@PORTALVERSE_NETWORK"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github" />
+					</a>
 					<a
 						class="px-2"
 						href="https://medium.com/@PORTALVERSE_NETWORK"
